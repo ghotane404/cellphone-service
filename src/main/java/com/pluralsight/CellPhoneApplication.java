@@ -22,7 +22,7 @@ public class CellPhoneApplication {
         System.out.println("Who is the owner of the phone? ");
         owner = scanner.nextLine();
 
-        // it's creating a new CellPhone() object and calls it cellPhone
+        // creates a new CellPhone object and stores it in the variable cellPhone
         // sends all user input value to the constructor
         CellPhone cellPhone = new CellPhone(serialNumber, model, carrier, phoneNumber, owner);
 
@@ -32,5 +32,9 @@ public class CellPhoneApplication {
         System.out.println("Who is the carrier? " + cellPhone.getCarrier());
         System.out.println("What is the phone number? " + cellPhone.getPhoneNumber());
         System.out.println("Who is the owner of the phone? " + cellPhone.getOwner());
+        // (side note for ME: kind of like SQL query with table name cellPhone and .getXYZ is the column in the table)
     }
 }
+
+// serialNumber in main() is just a regular local variable
+// serialNumber inside CellPhone is part of the object itself
