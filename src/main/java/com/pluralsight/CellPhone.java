@@ -51,7 +51,8 @@ public class CellPhone {
     public void setOwner(String owner) { // setter for setOwner
         this.owner = owner;
     }
-    public void dial(String phoneNumber) { // setter for setOwner
-        System.out.printf(owner + "'s phone is calling " + phoneNumber);
+    // dial() method uses the value in phoneNumber as a parameter and displays the number the owner is cell phoning
+    public void dial(String phoneNumber) {
+        System.out.println(getOwner() + "'s phone is calling " + phoneNumber);
     }
 }
